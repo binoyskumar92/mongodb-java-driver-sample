@@ -1,23 +1,24 @@
-# Java Quick Start Project
+# Java Sync Driver Sample Code
 
-This repository contains code samples for the Quick Start blog post series.
+This repository contains a sample code to test out basic CRUD operations using the Java Sync Driver.
 
-You can read more about the Quick Start series on the [MongoDB Developer Hub](https://developer.mongodb.com/learn/).
+## Getting Started
 
-- [MongoDB & Java - CRUD Operations Tutorial](https://developer.mongodb.com/quickstart/java-setup-crud-operations)
-- [Java - Mapping POJOs](https://developer.mongodb.com/quickstart/java-mapping-pojos)
-- [Java - Aggregation Pipeline](https://developer.mongodb.com/quickstart/java-aggregation-pipeline)
-- [Java - Change Streams](https://developer.mongodb.com/quickstart/java-change-streams)
-- [Java - Client Side Field Level Encryption](https://developer.mongodb.com/quickstart/java-client-side-field-level-encryption/)
+Follow the instructions below to get started with the project:
 
-# MongoDB Cluster
+1. **Build the Project**
 
-To get started with MongoDB Atlas and get a free cluster read [this blog post](https://developer.mongodb.com/quickstart/free-atlas-cluster).
+    Before you start, make sure to build the project.
 
-# Requirements
+2. **Use Create and Read Methods**
 
-- Java JDK 8 to 15.
-- Maven 3.6.3.
+    Use the Create and Read methods provided by the Java Sync Driver to read and write content.
+3. **Provide MongoDB URI**
+
+   It's crucial to supply your MongoDB URI when running the program. This can be done through a command-line argument when starting the Java program. For example:
+
+Enjoy testing out the basic CRUD operations with Java Sync Driver!
+
 
 # Command lines
 
@@ -27,15 +28,6 @@ To get started with MongoDB Atlas and get a free cluster read [this blog post](h
 mvn clean compile
 ```
 
-- Run the `HelloMongoDB` class: 
-
-```sh
-mvn compile exec:java -Dexec.mainClass="com.mongodb.quickstart.HelloMongoDB" -Dexec.cleanupDaemonThreads=false
-```
-- Run the `Connection` class: 
-
-```sh
-mvn compile exec:java -Dexec.mainClass="com.mongodb.quickstart.Connection" -Dmongodb.uri="mongodb+srv://USERNAME:PASSWORD@cluster0-abcde.mongodb.net/test?w=majority" -Dexec.cleanupDaemonThreads=false
 ```
 
 - Run the `Create` class:
@@ -61,30 +53,6 @@ mvn compile exec:java -Dexec.mainClass="com.mongodb.quickstart.Update" -Dmongodb
 ```sh
 mvn compile exec:java -Dexec.mainClass="com.mongodb.quickstart.Delete" -Dmongodb.uri="mongodb+srv://USERNAME:PASSWORD@cluster0-abcde.mongodb.net/test?w=majority" -Dexec.cleanupDaemonThreads=false
 ```
-
-- Run the `MappingPOJO` class:
-
-```sh
-mvn compile exec:java -Dexec.mainClass="com.mongodb.quickstart.MappingPOJO" -Dmongodb.uri="mongodb+srv://USERNAME:PASSWORD@cluster0-abcde.mongodb.net/test?w=majority" -Dexec.cleanupDaemonThreads=false
-```
-
-- Run the `AggregationFramework` class:
-
-```sh
-mvn compile exec:java -Dexec.mainClass="com.mongodb.quickstart.AggregationFramework" -Dmongodb.uri="mongodb+srv://USERNAME:PASSWORD@cluster0-abcde.mongodb.net/test?w=majority" -Dexec.cleanupDaemonThreads=false
-```
-
-- Run the `ChangeStreams` class:
-
-```sh
-mvn compile exec:java -Dexec.mainClass="com.mongodb.quickstart.ChangeStreams" -Dmongodb.uri="mongodb+srv://USERNAME:PASSWORD@cluster0-abcde.mongodb.net/test?w=majority" -Dexec.cleanupDaemonThreads=false
-```
-
-- Run the `ClientSideFieldLevelEncryption` class:
-```sh
-mvn compile exec:java -Dexec.mainClass="com.mongodb.quickstart.csfle.ClientSideFieldLevelEncryption" -Dmongodb.uri="mongodb+srv://USERNAME:PASSWORD@cluster0-abcde.mongodb.net/test?w=majority" -Dexec.cleanupDaemonThreads=false
-```
-
 
 # Author
 
