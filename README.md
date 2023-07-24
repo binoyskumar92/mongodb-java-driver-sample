@@ -28,8 +28,6 @@ Enjoy testing out the basic CRUD operations with Java Sync Driver!
 mvn clean compile
 ```
 
-```
-
 - Run the `Create` class:
 
 ```sh
